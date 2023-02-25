@@ -1,49 +1,26 @@
-class Deck{
-    constructor(){
-        const suits = ['Diamonds', 'Hearts', 'Clubs', 'Spades']
-        const faces = ['Ace', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King']
-        const cards = []
-            suits.forEach(suits => {
-                faces.forEach(faces => {
-                    cards.push(this.createDeck(suits, faces))
+class Deck {
+    constructor() {
+        const suit = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
+        const face = ['Ace', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King']
+        const deckOfCards = []
+            suit.forEach(suit => {
+                face.forEach(face => {
+                    deckOfCards.push(this.createDeck(suit, face))
                 })
-            });
-            this.cards = cards
+            })
+            this.deckOfCards = deckOfCards
     }
-
-    createDeck(suits, faces) {
-        return `${faces} of ${suits}`
+    createDeck(suit, face){
+        return `${face} of ${suit}`
     }
 }
 
-hand = new Deck()
-console.log(hand)
-
-console.log(hand.createDeck('Hearts', '5'))
+dealer = new Deck()
+console.log(dealer)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//built in 3:51
 
 
 

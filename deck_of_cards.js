@@ -23,5 +23,3 @@ console.log(dealer)
 //built in 3:51
 
 
-
-
